@@ -37,7 +37,7 @@ ul li.checked {
   text-decoration: line-through;
 }
 
-ul li.checked::before {
+/* ul li.checked::before {
   content: "";
   position: absolute;
   border-color: #fff;
@@ -48,19 +48,18 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
-}
+} */
 
 .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 0; */
+  padding: 4px !important;
 }
 
 .close:hover {
   background-color: #f78501;
   color: white;
-
 }
 
 .header {
@@ -105,17 +104,4 @@ input {
 
 .button:hover {
   background-color: #bbb;
-}
-
-.deletebutton{
-  border-radius: 24px;
-  height:30px;
-  width: 30px;
-  background: red;
-  text-align: center;
-
-}
-.tikbox{
-  margin: 5px;
-
 }
