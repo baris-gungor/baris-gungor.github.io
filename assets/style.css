@@ -32,7 +32,7 @@ ul li:hover {
 }
 
 ul li.checked {
-  background: #276678;
+  background: #43899d;
   color: #fff;
   text-decoration: line-through;
 }
@@ -51,10 +51,12 @@ ul li.checked {
 } */
 
 .close {
-  /* position: absolute; */
-  /* right: 0; */
-  /* top: 0; */
-  padding: 4px !important;
+  padding: 0px 8px 7px 8px !important;
+  /* color: rgb(255, 62, 62) !important; */
+  margin: -10px 0px 0px 0px !important;
+  font-size: 36px !important;
+  border: 1px solid rgba(0, 0, 0, 0.35) !important;
+  border-radius: 100% !important;
 }
 
 .close:hover {
