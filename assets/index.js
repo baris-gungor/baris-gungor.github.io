@@ -1,25 +1,26 @@
 window.addEventListener("DOMContentLoaded", function () {
   let todolist = [];
-  let count,i = 0;
+  let count,
+    i = 0;
   let list = document.getElementById("tasklist");
-  // Loop for localstorage to work nicely
+  // statement for if there is a db
   if (localStorage.getItem(localStorage.key(0))) {
     count = JSON.parse(localStorage.getItem(localStorage.key(0))).length;
+  } else {
+    count = 0;
   }
-
-  //   let count = JSON.parse(localStorage.getItem(localStorage.key(i))).length;
-  console.log(count);
+  console.log(`Toplam task sayısı: ${count}`);
+  // Loop for localstorage to work nicely
   for (i = 0; i < count; i++) {
     // Make sure that we only read the todolist from local storage
-    todolist = JSON.parse(localStorage.getItem("todolist"));
+    getlocal();
     // elements: li, deletebutton
     let litem = document.createElement("li");
     let deletebutton = document.createElement("span");
     deletebutton.classList.add("close");
     deletebutton.textContent = "\u00D7";
     deletebutton.onclick = removeButton;
-    licount = `${i}`;
-    litem.setAttribute("id", licount);
+    litem.setAttribute("id", i);
     // checks localstorage if its clicked before
     if (todolist[i].jobstatus == true) {
       litem.className = "checked";
@@ -38,8 +39,8 @@ window.addEventListener("DOMContentLoaded", function () {
       } else if (todolist[index].jobstatus == true) {
         todolist[index].jobstatus = false;
       }
-      reloadPage();
       savelocal();
+      reloadPage();
     });
   });
   newElement = function () {
@@ -48,12 +49,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // Using if(entered value is not empty) then push
     if (taskvalue.trim() !== "") {
       todolist.push({ jobname: taskvalue, jobstatus: false });
-      // localStorage.setItem("todolist", JSON.stringify(todolist));
-      // let ulItem = document.createElement("li");
-      // // Set the content of the <li>
-      // ulItem.innerHTML = taskvalue;
-      // list.appendChild(ulItem);
-      newinput[0].value = "";
+      newinput.value = "";
       reloadPage();
       savelocal();
     }
@@ -62,20 +58,21 @@ window.addEventListener("DOMContentLoaded", function () {
   function removeButton(item) {
     let x = item.target.parentElement;
     getlocal();
-    // todolist = JSON.parse(localStorage.getItem("todolist"));
     todolist.splice(x.id, 1);
-    // localStorage.setItem("todolist", JSON.stringify(todolist));
     savelocal();
     reloadPage();
   }
-  // to not rewrite code again. reloads
+  // to not rewrite code again
+  // reload
   function reloadPage() {
     window.location.reload();
   }
+  // localstorage setitem
   function savelocal() {
     localStorage.setItem("todolist", JSON.stringify(todolist));
   }
+  // localstorage getitem
   function getlocal() {
-    todolist == JSON.parse(localStorage.getItem("todolist"));
+    todolist = JSON.parse(localStorage.getItem("todolist"));
   }
 });
