@@ -7,24 +7,39 @@
     <title>Projects</title>
   </head>
   <body>
-    <div>
-      <a href="/to-do-list/index.html">to-do-list</a>
-      <a href="/kitchen-filter-patika.project/index.html">kitchen-filter-patika.project</a>
-      <a href="/clock-patika.project/index.html">clock-patika.project</a>
-    </div>
+    <header>
+      <h2>
+        <button><a href="/to-do-list/index.html">to-do-list</a></button>
+        <button><a href="/kitchen-filter-patika.project/index.html">kitchen-filter-patika.project</a></button>
+        <button><a href="/clock-patika.project/index.html"> clock-patika.project </a></button>
+      </h2>
+    </header>
   </body>
 </html>
 <style>
-  div {
-    margin: 75px;
-    text-align: center;
+  * {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-decoration: none;
   }
-  div a {
-    font-size: 32px;
+  header {
+    text-align: center;
+    width: 100%;
+    background: hsla(30, 100%, 50%, 0.5);
+    padding: 10px;
+    margin: 0%;
+  }
+  header button {
+    width: 12%;
+    background: rgba(246, 255, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 100%;
-    text-decoration: none;
+    margin: 15px;
     padding: 30px 10px 30px 10px;
-    margin: 25px;
+
+  }
+  header button a{
+    padding: 30px 10px 30px 10px;
+
   }
 </style>
