@@ -15,21 +15,43 @@
   </head>
   <body>
     <div class="bcontainer">
-      <div class="bheader shadow-lg">
+      <div class="bheader">
         <button
           type="button"
           class="bbtn btn"
-          onclick="window.location.href='#'"
+          onclick="window.location.href='#todolist'"
         >
-          Main Page
+          To-Do List
+        </button>
+        <button
+          type="button"
+          class="bbtn btn"
+          onclick="window.location.href='#kitchenfilter'"
+        >
+          Kitchen Filter
+        </button>
+        <button
+          type="button"
+          class="bbtn btn"
+          onclick="window.location.href='#clockpatika'"
+        >
+          Clock Patika
         </button>
       </div>
       <div class="bcontent">
-        <div class="">
+        <div id="todolist" class="bcontentitem">
           <h3>To-Do List</h3>
           <p>
             Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
-            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz.
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. Bu örnekte html, css, javascript kullanarak bir yapılacaklar listesi
+            yaptım. Butona tıklayarak sitenin örneğine ulaşabilirisiniz. 
           </p>
           <button
             type="button"
@@ -39,7 +61,7 @@
             to-do-list
           </button>
         </div>
-        <div class="">
+        <div id="kitchenfilter" class="bcontentitem">
           <h3>Kitchen Filter</h3>
           <p>
             Bu örnekte html, css, javascript kullanarak ürünleri filtreleyen bir
@@ -53,7 +75,7 @@
             kitchen-filter-patika-project
           </button>
         </div>
-        <div class="">
+        <div id="clockpatika" class="bcontentitem">
           <h3>Clock</h3>
           <p>
             Bu örnekte html, css, javascript kullanarak bir saat yaptım. Butona
@@ -68,7 +90,6 @@
           </button>
         </div>
       </div>
-      
     </div>
 
     <!-- JavaScript Bundle with Popper -->
@@ -84,37 +105,51 @@
     box-sizing: border-box !important;
     word-wrap: break-word;
     text-decoration: none;
+    text-align: center;
   }
   body {
-    background: rgb(0, 7, 69);
+    background: rgb(0, 6, 61);
   }
   .bcontainer {
-    text-align: center;
     width: 75%;
     background: hsla(30, 100%, 50%, 0.5);
     margin: 0px auto 0px auto;
   }
   .bheader {
-    background: rgba(22, 90, 216, 0.648);
+    /* background: rgba(22, 90, 216, 0.648); */
+    background: rgb(18, 26, 93);
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    box-shadow: 0px 1rem 0.5rem 0px rgb(0, 0, 0) !important;
   }
   .bbtn {
     font-size: 20px;
     color: whitesmoke;
-    background: rgba(0, 85, 255, 0.721);
+    background: rgb(34, 102, 237);
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    margin: 10px;
+    padding: 14px;
+    margin: 15px 0px 15px 0px;
+  }
+  .bbtn:hover{
+    background: rgb(28, 84, 195);
   }
   .bcontent {
-    background: rgba(128, 255, 156, 0.649);
+    background: rgba(255, 255, 255, 0.74);
+    padding: 20px 40px 40px 40px;
     display: flex !important;
     flex-direction: column;
   }
   .bcontent p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .bcontent h3 {
-    font-size: 26px;
+    font-size: 36px;
     margin-top: 20px;
+    text-align: center;
+  }
+  .bcontentitem{
+    /* background: rgb(227, 215, 191); */
+    padding: 0px 10px 10px 10px;
   }
 </style>
