@@ -41,13 +41,15 @@ body {
     border-radius: 6px;
     position: fixed;
     z-index: 1;
-    left: 64px;
+    left: 8em;
     top: 10px;
+    
 }
 
 .canvaspart .canvasbtn:hover {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgb(222, 222, 222) !important;
+    
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
 }
 
 .offcanvas-header .btn-close {
@@ -68,7 +70,7 @@ body {
 
 .headerbg img {
     width: 70%;
-    margin-top: -1em;
+    margin-top: 0em;
     padding: 0rem;
     border-radius: 100%;
 
@@ -153,7 +155,7 @@ body {
     height: auto;
     
 }  */
-#home {
+.homeclass {
     background-image: url(https://preview.redd.it/6g3nt8z8y6o11.jpg?auto=webp&s=91f8a71a4452913ce4ae6adcb32d229a07213626);
     background-position: left;
     background-repeat: no-repeat;
@@ -185,3 +187,20 @@ body {
 
 }
 
+@media (max-width: 420px){
+.offcanvas-start,.offcanvas-header{
+    max-width: 10em !important;
+}
+.homeclass{
+    background-size: contain;
+    background-position: top;
+    margin-bottom: -32em !important;
+}
+.offcanvas-header .btn-close{
+    /* display: none; */
+    margin: 0em 0em 0em 7em !important;
+}
+.canvaspart .canvasbtn{
+    left: 1.5em !important;
+}
+}
