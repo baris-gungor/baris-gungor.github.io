@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- canvas -->
+      <span class="canvaspart">
+        <!-- canvas buton -->
+        <button
+          class="canvasbtn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="true"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="headerbg offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <!-- canvas buton -->
+            <img src="./assets/testportrait.jpg" srcset="" />
+            <h1>Jackson Ford</h1>
+            <p><a href="#home">UI/UX DESIGNER</a> IN PHILIPPINES</p>
+            <div class="navbutton">
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#home'"
+              >
+                HOME
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#about'"
+              >
+                ABOUT
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#services'"
+              >
+                SERVICES
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#skills'"
+              >
+                SKILLS
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#education'"
+              >
+                EDUCATION
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#experience'"
+              >
+                EXPERIENCE
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#work'"
+              >
+                WORK
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#blog'"
+              >
+                BLOG
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#contact'"
+              >
+                CONTACT
+              </button>
+            </div>
+            <div class="copyright">© Copyright © 2022 All rights reserved</div>
+          </div>
+        </div>
+      </span>
+      <!-- canvas -->
+      <div class="content">
+        <div id="home" class="">
+          <!-- <img src="./assets/contentimg.jpg" srcset="" /> -->
+          <div class="textat">
+            <h1>Hi!</h1>
+            <h1>I'm Jackson</h1>
+            <p>100% html5 bootstrap templates Made by colorlib.com</p>
+          </div>
+        </div>
+        <div id="about">
+          <div class="aboutclass">
+            <h3>ABOUT US</h3>
+            <h1>WHO AM I?</h1>
+            <p>
+              Hi I'm Jackson Ford On her way she met a copy. The copy warned the
+              Little Blind Text, that where it came from it would have been
+              rewritten a thousand times and everything that was left from its
+              origin would be the word "and" and the Little Blind Text should
+              turn around and return to its own, safe country.
+            </p>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic life One day however a small
+              line of blind text by the name of Lorem Ipsum decided to leave for
+              the far World of Grammar.
+            </p>
+          </div>
+        </div>
+        <div id="about">
+          <div class="aboutclass">
+            <h3>ABOUT US</h3>
+            <h1>WHO AM I?</h1>
+            <p>
+              Hi I'm Jackson Ford On her way she met a copy. The copy warned the
+              Little Blind Text, that where it came from it would have been
+              rewritten a thousand times and everything that was left from its
+              origin would be the word "and" and the Little Blind Text should
+              turn around and return to its own, safe country.
+            </p>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic life One day however a small
+              line of blind text by the name of Lorem Ipsum decided to leave for
+              the far World of Grammar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
