@@ -191,7 +191,9 @@ p{
 }
 
 .row{
-    justify-content: center;
+    justify-content: center !important;
+    margin: 0em 0em 0em 0em !important;
+    padding: 0em 0em 0em 0em !important;
 
 }
 .col {
@@ -235,7 +237,7 @@ p{
 @media (min-width:419px) {
     /* smartphones, iPhone, portrait 480x420 phones */
     .margintop{
-        margin-top: 10%;
+        margin-top: 14%;
     }
 }
 
@@ -246,7 +248,7 @@ p{
         max-width: 85% !important;
     }
     .margintop{
-        margin-top: 14%;
+        margin-top: 16%;
     }
 
 }
@@ -260,14 +262,14 @@ p{
         left: 10% !important;
     }
     .margintop{
-        margin-top: 24%;
+        margin-top: 26%;
     }
 }
 
 @media (min-width:961px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     .margintop{
-        margin-top: 26%;
+        margin-top: 28%;
     }
 }
 
@@ -281,7 +283,7 @@ p{
         left: 14% !important;
     }
     .margintop{
-        margin-top: 28%;
+        margin-top: 30%;
     }
     /* .offcanvas-header .btn-close {
         margin: 0em 0em 0em 11em !important;
@@ -311,7 +313,7 @@ p{
         margin: 0em 0em 0em 11em !important;
     } */
     .margintop{
-        margin-top: 30%;
+        margin-top: 32%;
     }
     .hireme {
         max-width: 50%;
