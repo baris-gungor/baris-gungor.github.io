@@ -9,11 +9,13 @@ body {
     background: rgb(255, 255, 255);
 
 }
-p{
+
+p {
     font-size: 12px;
     font-family: "Quicksand", Arial, sans-serif;
 }
-.container {
+
+.containerclass {
     max-width: 100%;
     padding: 0em !important;
     /* width: 100%; */
@@ -63,17 +65,20 @@ p{
     border: none !important;
     transform: translateX(-100%);
 }
+
 .offcanvas-header .btn-close {
     padding: 1.3em 1.3em !important;
     margin: 0em 0em 0em 80% !important;
     color: rgba(0, 0, 0, 0.7);
     display: none;
 }
+
 .headerbg img {
     width: 85%;
     border-radius: 50%;
     margin-top: -0.5em;
 }
+
 .headerbg a {
     color: #2c98f0;
 }
@@ -81,10 +86,9 @@ p{
 .navbutton {
     display: flex;
     flex-direction: column;
-    
+
     margin: 0em 0em 1em 0em;
 }
-
 
 .navbutton button {
     font-size: 12px;
@@ -125,17 +129,28 @@ p{
     color: #2c98f0;
 }
 
+.mainclass {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.margintop {
+    padding-top: 3% !important;
+}
+
 .pictureon {
-    /* position: relative; */
-    margin-top: -50%;
-    margin-left: 1em;
-    padding: 1em;
-    color: rgb(227, 227, 227);
+    position: absolute;
+    text-align: left;
+    top: 8%;
+    left: 1%;
+    padding: 5%;
+    color: rgb(207, 207, 207);
 }
 
 .contentitem {
     position: relative;
-    padding: 2em 2em;
+    padding: 4em 2em;
     max-width: 90%;
 
 }
@@ -190,12 +205,13 @@ p{
     margin-bottom: 2em;
 }
 
-.row{
+.row {
     justify-content: center !important;
     margin: 0em 0em 0em 0em !important;
     padding: 0em 0em 0em 0em !important;
 
 }
+
 .col {
     padding: 3em 1em !important;
     margin: 3em 1em 1em 1em !important;
@@ -221,107 +237,48 @@ p{
 }
 
 
-@media  (min-width:250px) {
-    /* Galaxy Fold */
-    .margintop{
-        margin-top: -0%;
-    }
-}
-
-@media (min-width:320px) {
-    /* smartphones, iPhone, portrait 480x320 phones */
-    .margintop{
-        margin-top: 4%;
-    }
-}
-@media (min-width:419px) {
-    /* smartphones, iPhone, portrait 480x420 phones */
-    .margintop{
-        margin-top: 14%;
-    }
-}
-
-@media (min-width:481px) {
-
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    .container {
-        max-width: 85% !important;
-    }
-    .margintop{
-        margin-top: 16%;
-    }
+@media (min-width:0px) and (max-width:575px) {
+    /* Smartphones 0-575*/
 
 }
 
-@media (min-width:641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:576px) and (max-width:992px) {
+
+    /* tablets 576-992 */
+    .offcanvas-start {
+        width: 30% !important;
+
+    }
+}
+
+@media (min-width:992px) and (max-width:1400px) {
+
+    /* pc 992-1400 */
     .offcanvas-start {
         width: 20% !important;
-    }
-    .canvasbtn {
-        left: 10% !important;
-    }
-    .margintop{
-        margin-top: 26%;
+
     }
 }
 
-@media (min-width:961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .margintop{
-        margin-top: 28%;
-    }
-}
+@media (min-width:1400px) {
 
-@media (min-width:1023px) {
-
-    /* big landscape tablets, laptops, and desktops */
-    .container {
-        max-width: 75% !important;
-    }
-    .canvasbtn {
-        left: 14% !important;
-    }
-    .margintop{
-        margin-top: 30%;
-    }
-    /* .offcanvas-header .btn-close {
-        margin: 0em 0em 0em 11em !important;
-    } */
-
-    .hireme {
-        max-width: 60%;
-    }
-
-}
-
-@media (min-width:1281px) {
-    /* hi-res laptops and desktops */
-    .container {
-        max-width: 60% !important;
+    /* big screen 1400>.... */
+    .containerclass {
+        max-width: 70%;
+        margin: 0px auto;
     }
 
     .canvasbtn {
-        left: 21% !important;
+        left: 16% !important;
     }
 
     .offcanvas-start {
-        width: 15% !important;
+        width: 20% !important;
+
     }
 
-    /* .offcanvas-header .btn-close {
-        margin: 0em 0em 0em 11em !important;
-    } */
-    .margintop{
-        margin-top: 32%;
-    }
-    .hireme {
-        max-width: 50%;
-    }
-}
-@media (min-width:1980px) {
-    .margintop{
-        margin-top: 40%;
+    .pictureon {
+        left: 12%;
     }
 }
 
