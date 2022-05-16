@@ -281,7 +281,7 @@ body {
 }
 
 
-@media (min-width:250px) {
+@media  (min-width:250px) {
     /* Galaxy Fold */
     .homeclass {
         padding: 7em !important;
@@ -378,6 +378,36 @@ body {
 
 @media (min-width:1281px) {
     /* hi-res laptops and desktops */
+    .container {
+        max-width: 75% !important;
+    }
+
+    .canvasbtn {
+        left: 11em !important;
+    }
+
+    .offcanvas-header,
+    .offcanvas-start {
+        width: 16em !important;
+    }
+
+    .offcanvas-header .btn-close {
+        margin: 0em 0em 0em 11em !important;
+    }
+
+    .homeclass {
+        background-size: contain;
+        padding: 22em !important;
+    }
+
+    .hireme {
+        max-width: 60%;
+    }
+
+    .aboutclass {
+        max-width: 70%;
+        margin-top: 2em;
+    }
 }
 
 /* scrollbar */
