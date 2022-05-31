@@ -11,18 +11,19 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 0.7rem;
     font-family: "Quicksand", Arial, sans-serif;
 }
 
 .containerclass {
     max-width: 100%;
-    padding: 0em !important;
+    padding: 0rem !important;
     /* width: 100%; */
 }
 
 .canvaspart .canvasbtn {
-    padding: 0.2em 0.2em;
+    padding: 6px;
+    display: flex;
     background: white;
     color: rgba(0, 0, 0, 0.982);
     /* border: 1px solid rgba(0, 0, 0, 0.3); */
@@ -32,8 +33,8 @@ p {
     border: none;
     position: fixed;
     z-index: 1;
-    left: 1em;
-    top: 1em;
+    margin-left: 1rem;
+    margin-top: 1rem;
 
 }
 
@@ -91,7 +92,7 @@ p {
 }
 
 .navbutton button {
-    font-size: 12px;
+    font-size: 0.9rem;
     color: rgba(0, 0, 0, .7);
     background: transparent;
     border: none;
@@ -142,9 +143,9 @@ p {
 .pictureon {
     position: absolute;
     text-align: left;
-    top: 5%;
-    left: 1%;
-    padding: 5%;
+    margin-top: 3rem;
+    margin-left: 0rem;
+    padding: 1rem;
     color: rgb(207, 207, 207);
 }
 
@@ -174,7 +175,7 @@ p {
 }
 
 .hireme button {
-    font-size: 16px;
+    /* font-size: 1rem; */
     color: rgba(0, 0, 0, .7);
     background: transparent;
     padding: 0.5em;
@@ -191,7 +192,7 @@ p {
 }
 
 .contentitem p {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 200;
     color: rgb(92, 92, 92);
 }
@@ -255,15 +256,9 @@ p {
 
     /* pc 992-1400 */
     .offcanvas-start {
-        width: 25% !important;
-
+        width: 20% !important;
     }
-    .pictureon {
-        left: 10%;
-    }
-    .canvasbtn {
-        left: 12% !important;
-    }
+    
 }
 
 @media (min-width:1400px) {
@@ -274,34 +269,26 @@ p {
         margin: 0px auto;
     }
 
-    .canvasbtn {
-        left: 21% !important;
-    }
-
     .offcanvas-start {
         width: 20% !important;
 
     }
 
-    .pictureon {
-        left: 16%;
-    }
+   
 }
 @media (min-width:1800px) {
-
     /*big screen 1400>....  */
     .containerclass {
+        /* font-size: 24px !important; */
         max-width: 50%;
         margin: 0px auto;
     }
     .canvasbtn {
-        left: 30% !important;
-    }
-
-    .pictureon {
-        left: 25%;
+        margin-left: 8rem !important;
     }
 }
+
+
 
 /* scrollbar */
 ::-webkit-scrollbar-track {
