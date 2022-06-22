@@ -33,7 +33,7 @@ p {
     border: none;
     position: fixed;
     z-index: 1;
-    margin-left: 1rem;
+    margin-left: 1rem !important;
     margin-top: 1rem;
 
 }
@@ -297,9 +297,6 @@ p {
         margin: 0px auto;
     }
 
-    .canvasbtn {
-        margin-left: 8rem !important;
-    }
 }
 
 
