@@ -131,23 +131,13 @@ p {
 }
 
 .mainclass {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin:  auto;
 }
 
 .margintop {
     padding-top: 3% !important;
 }
 
-.pictureon {
-    position: absolute;
-    text-align: left;
-    margin-top: 3rem;
-    margin-left: 0rem;
-    padding: 1rem;
-    color: rgb(207, 207, 207);
-}
 
 .contentitem {
     position: relative;
@@ -192,7 +182,7 @@ p {
 }
 
 .contentitem p {
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 200;
     color: rgb(92, 92, 92);
 }
@@ -203,7 +193,8 @@ p {
 }
 
 .contentitem h6 {
-    margin-bottom: 2em;
+    margin: 4px 0px 20px 0px;
+    font-size: 22px;
 }
 
 .row {
@@ -214,27 +205,47 @@ p {
 }
 
 .col {
-    padding: 3em 1em !important;
+    padding: 1em 1em !important;
     margin: 3em 1em 1em 1em !important;
     text-align: center;
     box-shadow: 0 0 6px rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .expertisebox {
     color: whitesmoke;
-    margin-top: -5em;
-    margin-bottom: 2em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
     padding: 1em;
-    height: 7em;
-    width: 7em;
+    height: 6em;
+    width: 6em;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.workitem{
+    position: relative;
+    padding: 1em 1em;
+    max-width: 90%;
+}
+.workitem p {
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(92, 92, 92);
+}
+
+.workitem h3 {
+    margin: 0.2em 0em 1em 0em;
+    font-weight: 400;
+}
+
+.workitem h6 {
+    margin: 4px 0px 20px 0px;
+    font-size: 22px;
 }
 
 
@@ -258,14 +269,14 @@ p {
     .offcanvas-start {
         width: 20% !important;
     }
-    
+
 }
 
 @media (min-width:1400px) {
 
     /* big screen 1400>.... */
     .containerclass {
-        max-width: 70%;
+        max-width: 60%;
         margin: 0px auto;
     }
 
@@ -274,15 +285,18 @@ p {
 
     }
 
-   
+
 }
+
 @media (min-width:1800px) {
+
     /*big screen 1400>....  */
     .containerclass {
         /* font-size: 24px !important; */
         max-width: 50%;
         margin: 0px auto;
     }
+
     .canvasbtn {
         margin-left: 8rem !important;
     }
