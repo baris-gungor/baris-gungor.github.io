@@ -1,147 +1,235 @@
 <!DOCTYPE html>
 <html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./personal-website/assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="/personal-website/assets/harvey.jpg" sizes="16x16">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="./personal-website/assets/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-</head>
-
-<body>
-  <div class="containerclass">
-    <!-- canvas -->
-    <span class="canvaspart">
-      <button class="canvasbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-        aria-controls="offcanvasScrolling">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </button>
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
-        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="headerbg offcanvas-header">
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          <img src="./personal-website/assets/harvey.jpg" srcset="" />
-          <h1>Barış Güngör</h1>
-          <p><a href="#home">FRONTEND DEV</a> IN TURKEY</p>
-          <div class="navbutton">
-            <button type="button" class="" onclick="window.location.href='#home'">
-              HOME
-            </button>
-            <button type="button" class="" onclick="window.location.href='#about'">
-              ABOUT
-            </button>
-            <!-- <button type="button" class="" onclick="window.location.href='#services'">
+  <body>
+    <div class="containerclass">
+      <!-- canvas -->
+      <span class="canvaspart">
+        <button
+          class="canvasbtn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="true"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="headerbg offcanvas-header">
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img src="./personal-website/assets/harvey.jpg" srcset="" />
+            <h1>Barış Güngör</h1>
+            <p><a href="#home">FRONTEND DEV</a> IN TURKEY</p>
+            <div class="navbutton">
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#home'"
+              >
+                HOME
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#about'"
+              >
+                ABOUT
+              </button>
+              <!-- <button type="button" class="" onclick="window.location.href='#services'">
               SERVICES
             </button> -->
-            <button type="button" class="" onclick="window.location.href='#skills'">
-              SKILLS
-            </button>
-            <button type="button" class="" onclick="window.location.href='#experience'">
-              EXPERIENCE
-            </button>
-            <button type="button" class="" onclick="window.location.href='#education'">
-              EDUCATION
-            </button>
-            <button type="button" class="" onclick="window.location.href='#work'">
-              WORK
-            </button>
-            <!-- <button type="button" class="" onclick="window.location.href='#blog'">
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#skills'"
+              >
+                SKILLS
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#experience'"
+              >
+                EXPERIENCE
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#education'"
+              >
+                EDUCATION
+              </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#work'"
+              >
+                WORK
+              </button>
+              <!-- <button type="button" class="" onclick="window.location.href='#blog'">
               BLOG
             </button> -->
-            <button type="button" class="" onclick="window.location.href='#contact'">
-              CONTACT
-            </button>
+              <button
+                type="button"
+                class=""
+                onclick="window.location.href='#contact'"
+              >
+                CONTACT
+              </button>
+            </div>
+            <p>©</p>
           </div>
-          <p>© Copyright © 2022 All rights reserved</p>
         </div>
-      </div>
-    </span>
-    <!-- canvas -->
-    <div class="mainclass">
-      <div id="home" class="">
-        <img style="max-width: 100%" src="./personal-website/assets/main.jpg" srcset="" />
-      </div>
+      </span>
+      <!-- canvas -->
+      <div class="mainclass">
+        <div id="home" class="">
+          <img
+            style="max-width: 100%"
+            src="./personal-website/assets/main.jpg"
+            srcset=""
+          />
+        </div>
 
-      <div id="about" class="contentitem margintop">
-        <p>ABOUT ME</p>
-        <h2>WHO AM I?</h2>
-        <p>
-          <strong>Hi I'm Barış Güngör.</strong> I am a <span id="aboutage"></span> year old software
-          developer at the beginning of my career.I chose the computer programming course at the university because I
-          thought that after graduating from high school, I would be interested in software and that I would improve
-          myself and be successful in this field. I am very happy with the choice I made. Doing my job gives me a lot of
-          pleasure and pushes me to research. I have seen the benefit of being in English language class in high school
-          while doing research on foreign sources in my field. I have been working as a developer at Etiya for 7 months.
-          For now, I can call myself a front-end developer, but I want to improve myself in many areas. I am determined,
-          I do not like to leave the work half done or half-baked. It is important to me to do the job well and clearly
-          for the person next to me. It gives me pleasure to work on work-related or unrelated projects and improve
-          myself in intervals where I can create time. When I rest, I have hobbies such as relating to nature (trekking,
-          camping, swimming) and hiking, spending time with a few close friends, playing story based games, reading
-          science fiction novels (witcher, star wars).
-        </p>
+        <div id="about" class="contentitem margintop">
+          <p>ABOUT ME</p>
+          <h2>WHO AM I?</h2>
+          <p>
+            <strong>Hi I'm Barış Güngör.</strong> I am a
+            <span id="aboutage"></span> year old software developer at the
+            beginning of my career.I chose the computer programming course at
+            the university because I thought that after graduating from high
+            school, I would be interested in software and that I would improve
+            myself and be successful in this field. I am very happy with the
+            choice I made. Doing my job gives me a lot of pleasure and pushes me
+            to research. I have seen the benefit of being in English language
+            class in high school while doing research on foreign sources in my
+            field. I have been working as a developer at Etiya for 7 months. For
+            now, I can call myself a front-end developer, but I want to improve
+            myself in many areas. I am determined, I do not like to leave the
+            work half done or half-baked. It is important to me to do the job
+            well and clearly for the person next to me. It gives me pleasure to
+            work on work-related or unrelated projects and improve myself in
+            intervals where I can create time. When I rest, I have hobbies such
+            as relating to nature (trekking, camping, swimming) and hiking,
+            spending time with a few close friends, playing story based games,
+            reading science fiction novels (witcher, star wars).
+          </p>
+        </div>
 
-      </div>
-
-      <div class="hireme">
-        <h3>Freshly graduated front end developer huh?</h3>
-        <button href="#">That's Me</button>
-      </div>
-      <div id="skills" class="contentitem">
-        <p>WHAT I DO?</p>
-        <h3>HERE ARE SOME INFORMATION</h3>
-        <div class="row">
-          <div class="col">
-            <div class="expertisebox" style="background: #2c98f0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-server"
-                viewBox="0 0 16 16">
-                <path
-                  d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z" />
-                <path
-                  d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z" />
-                <path
-                  d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z" />
-              </svg>
+        <div class="hireme">
+          <h3>Freshly graduated front end developer huh?</h3>
+          <button href="#">That's Me</button>
+        </div>
+        <div id="skills" class="contentitem">
+          <p>WHAT I DO?</p>
+          <h3>HERE ARE SOME INFORMATION</h3>
+          <div class="row">
+            <div class="col">
+              <div class="expertisebox" style="background: #2c98f0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-server"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"
+                  />
+                  <path
+                    d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"
+                  />
+                  <path
+                    d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"
+                  />
+                </svg>
+              </div>
+              <h6><a href="https://github.com/baris-gungor">GitHub</a></h6>
+              <p>You can see some of my projects here.</p>
             </div>
-            <h6><a href="https://github.com/baris-gungor">GitHub</a></h6>
-            <p>
-              You can see some of my projects here.
-            </p>
-          </div>
-          <div class="col">
-            <div class="expertisebox" style="background: rgb(236 84 83)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-briefcase"
-                viewBox="0 0 16 16">
-                <path
-                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-              </svg>
+            <div class="col">
+              <div class="expertisebox" style="background: rgb(236 84 83)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-briefcase"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
+              </div>
+              <h6>
+                <a href="https://www.linkedin.com/in/gungor-baris/">LinkedIn</a>
+              </h6>
+              <p>
+                Here is my LinkedIn profile. You can learn lots of things about
+                me.
+              </p>
             </div>
-            <h6><a href="https://www.linkedin.com/in/gungor-baris/">LinkedIn</a></h6>
-            <p>
-              Here is my LinkedIn profile. You can learn lots of things about me.
-            </p>
-          </div>
-          <div class="col">
-            <div class="expertisebox" style="background: rgb(249 191 63)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-phone"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-              </svg>
+            <div class="col">
+              <div class="expertisebox" style="background: rgb(249 191 63)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-phone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"
+                  />
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+              </div>
+              <h6>UI/UX Desing</h6>
+              <p>Cross platform front-end design.</p>
             </div>
-            <h6>UI/UX Desing</h6>
-            <p>
-              Cross platform front-end design.
-            </p>
-          </div>
-          <!-- <div class="col">
+            <!-- <div class="col">
             <div class="expertisebox" style="background: rgb(64 84 178)">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bug"
                 viewBox="0 0 16 16">
@@ -155,63 +243,101 @@
               Semantics
             </p>
           </div> -->
+          </div>
         </div>
-      </div>
-      <div id="experience">
-        <div></div>
-      </div>
-      <div id="education">
-        <div></div>
-      </div>
-      <div id="work" class="workitem">
-        <p>WHAT DID I DO?</p>
-        <h3>HERE ARE SOME OF MY PROJECTS</h3>
-        <div class="row">
-          <div class="col">
-            <div class="expertisebox" style="background: rgb(121, 134, 248)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bug"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z" />
-              </svg>
+        <div id="experience" class="expitem">
+          <div id="etiya">
+            <div class="expinfo">
+              <h2>My Experiences</h2>
+              <p>
+                Etiya / Software Developer <br />
+                10.01.2022 - Present
+              </p>
             </div>
-            <h6><a href="./projects/to-do-list/index.html">Todo Project No1</a></h6>
-            <p>
-              Todo list with local storage.
-            </p>
+            <div class="etiyalogo"></div>
           </div>
-          <div class="col">
-            <div class="expertisebox" style="background: rgb(121, 134, 248)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bug"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z" />
-              </svg>
-            </div>
-            <h6><a href="https://vuetify-todo-baris.netlify.app/#/">Todo Project No2</a></h6>
-            <p>
-              Todo list with vue. I used vuetify as framework.
-            </p>
-          </div>
-          <div class="col">
-            <div class="expertisebox" style="background: rgb(121, 134, 248)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bug"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z" />
-              </svg>
-            </div>
-            <h6><a href="./projects/clock-patika.project/index.html">Clock</a></h6>
-            <p>
-              Clock project asks you your name.
-            </p>
-          </div>
-
-
-
         </div>
-      </div>
-      <!-- <div id="work" class="workitem">
+        <div id="education" class="expitem">
+          <div id="gau">
+            <div class="eduinfo">
+              <h2>My Education</h2>
+              <p>
+                Girne American University / Computer Programming <br />
+                09.2018 - 02.2021
+              </p>
+            </div>
+            <div class="gaulogo"></div>
+          </div>
+        </div>
+        <div id="work" class="workitem">
+          <p>WHAT DID I DO?</p>
+          <h3>HERE ARE SOME OF MY PROJECTS</h3>
+          <div class="row">
+            <div class="col">
+              <div class="expertisebox" style="background: rgb(121, 134, 248)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-bug"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"
+                  />
+                </svg>
+              </div>
+              <h6>
+                <a href="./projects/to-do-list/index.html">Todo Project No1</a>
+              </h6>
+              <p>Todo list with local storage.</p>
+            </div>
+            <div class="col">
+              <div class="expertisebox" style="background: rgb(121, 134, 248)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-bug"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"
+                  />
+                </svg>
+              </div>
+              <h6>
+                <a href="https://vuetify-todo-baris.netlify.app/#/"
+                  >Todo Project No2</a
+                >
+              </h6>
+              <p>Todo list with vue. I used vuetify as framework.</p>
+            </div>
+            <div class="col">
+              <div class="expertisebox" style="background: rgb(121, 134, 248)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  fill="currentColor"
+                  class="bi bi-bug"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"
+                  />
+                </svg>
+              </div>
+              <h6>
+                <a href="./projects/clock-patika.project/index.html">Clock</a>
+              </h6>
+              <p>Clock project asks you your name.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="work" class="workitem">
         <h3>HERE ARE SOME OF MY PROJECTS</h3>
         <div class="row ">
           <div class="col">
@@ -247,35 +373,53 @@
         </div>
       </div> -->
 
-      <div id="contact">
-        <div></div>
+        <div id="contact">
+          <div>
+            <div class="conitem">
+              <h2>My Contacts</h2>
+              <p>E-mail : barisgungormail@gmail.com</p>
+              <p>
+                LinkedIn :
+                <a
+                  href="https://www.linkedin.com/in/gungor-baris/"
+                  target="_blank"
+                  >Barış Güngör</a
+                >
+              </p>
+              <p>
+                Github :
+                <a href="https://github.com/baris-gungor" target="_blank"
+                  >Barış Güngör</a
+                >
+              </p>
+              <p>
+                Twitter :
+                <a href="https://twitter.com/cahilbaris" target="_blank"
+                  >Barış Güngör</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script>
-    // let userName="Barış Güngör";
-    document.querySelector("#aboutage").innerHTML = ageCalculator()
-    function ageCalculator() {
-      let currentYearVal = new Date();
-      currentYearVal = currentYearVal.getFullYear();
-      let bornYearVal = 2000;
-      let ageVal = currentYearVal - bornYearVal;
-      console.log(ageVal);
-      return ageVal;
-    }
-
-  </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // let userName="Barış Güngör";
+      document.querySelector("#aboutage").innerHTML = ageCalculator();
+      function ageCalculator() {
+        let currentYearVal = new Date();
+        currentYearVal = currentYearVal.getFullYear();
+        let bornYearVal = 2000;
+        let ageVal = currentYearVal - bornYearVal;
+        console.log(ageVal);
+        return ageVal;
+      }
+    </script>
+  </body>
 </html>
